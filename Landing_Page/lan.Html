@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="lana.css">
+    <style>
+        body{
+            margin: 0%;
+        padding: 0%;
+
+        }
+        header{
+            width:100%;
+            height:100vh;
+            background:linear-gradient(rgba(28, 27, 27, 0.937),rgba(67, 7, 55, 0.91)), url("image/diwali-1125x674.png");
+            background-size: cover;
+        }
+        nav{
+           height:100px;
+           width:100%;
+        
+           color: white;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+        }
+       .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+            color: #e81111;
+        }
+        .menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px ;
+            font-size: 20px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top:0;
+            left: 0;
+            width:0%;
+            height:100%;
+            border-bottom:1px solid #21c63c;
+            transition: 0.4s linear;
+        }
+        .menu a:hover:before{
+            width: 90%;
+
+        }
+        .register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 30px ;
+            font-size: 20px;
+            background:#4b45bb;
+            border-radius: 5px;
+        }
+        .register a:hover{
+         background: transparent;
+         border: 1px solid #33b50b;
+        }
+        .h-text{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .h-text span{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .h-text a{
+            background: #34e303;
+            color:white;
+            text-decoration: none;
+            padding: 10px 20px;
+            letter-spacing: 1px;
+            font-size: 1.5em;
+            border-radius: 4px;
+        }
+        .h-text a:hover{
+            background: transparent;
+            border: 1px solid #e0e6e5;
+           }
+           .h-text h1{
+            font-size: 3em;
+           }
+           footer ul{
+            background: #383c3a;
+            margin: 0px;
+            text-align: center;
+           }
+           ul li{
+            padding: 10px;
+            list-style: none;
+           }
+           a{
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+           }
+          
+
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            Ultron Games
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">view Purchased</a>
+            <a href="#">Best Games</a>
+            <a href="#">Contact</a>
+
+        </div>
+        <div class="register">
+            <a href="#">Register</a>
+        </div>
+        </nav>
+        <section class="h-text">
+            <span>Enjoy</span>
+            <h1>All Games Available</h1>
+            <br>
+            <a href="#">Visit us for your special Games</a>
+        </section>
+    </header>
+    <footer>  
+        <ul>
+            <li><a href=""><i class="bi bi-geo-alt"></i> New Delhi</a></li>
+            <li><a href=""><i class="bi bi-person-lines-fill"></i> +91 98000 00000</a></li>
+            <li><a href="ultron45@gmail.com"><i class="bi bi-envelope-at"></i> ultron45@gmail.com</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
